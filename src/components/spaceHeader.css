@@ -1,8 +1,17 @@
-.spaceHeader {
+.headerWithLogo {
+  display: flex;
   background-color: darkblue;
   height: 5rem;
   width: 100%;
   border: black solid;
+}
+
+.spaceHeader {
+  /* background-color: darkblue;
+  height: 5rem;
+  width: 90%; */
+  width: 90%;
+
   font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -10,4 +19,12 @@
   padding: 1rem 5rem 1rem 2.5rem;
   box-sizing: border-box;
   margin: 0;
+}
+
+.spaceHeader img {
+  object-fit: contain;
+  /* max-width: 200px;
+  max-height: 184px; */
+  width: auto;
+  height: auto;
 }

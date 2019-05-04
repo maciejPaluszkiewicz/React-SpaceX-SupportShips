@@ -2,11 +2,13 @@ import React from "react";
 import "./shipList.css";
 
 const shipList = props => (
-  <div className="shipList">
+  <ul className="shipList">
     {props.shipList.map(ship => {
-      return <p>{ship.name}</p>;
+      return (
+        <li onClick={() => props.onShipClick(ship.ship_id)}>{ship.name}</li>
+      );
     })}
-  </div>
+  </ul>
 );
 
 export default shipList;
