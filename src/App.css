@@ -2,3 +2,11 @@
   display: flex;
   justify-content: start;
 }
+
+.App {
+  background-image: url("./images/deepspace.jpg");
+  /* background-color: red; */
+  height: 100%;
+  width: auto;
+  /* background-size: cover; */
+}

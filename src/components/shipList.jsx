@@ -5,7 +5,9 @@ const shipList = props => (
   <ul className="shipList">
     {props.shipList.map(ship => {
       return (
-        <li onClick={() => props.onShipClick(ship.ship_id)}>{ship.name}</li>
+        <li onClick={() => props.onShipClick(ship.ship_id)}>
+          {ship.ship_name}
+        </li>
       );
     })}
   </ul>
