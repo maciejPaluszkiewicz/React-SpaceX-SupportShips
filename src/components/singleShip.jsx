@@ -9,6 +9,7 @@ const singleShip = props => (
     <div>
       <img
         src={props.singleShip.image ? props.singleShip.image : placeHolder}
+        alt={props.singleShip.ship_name}
       />
     </div>
 

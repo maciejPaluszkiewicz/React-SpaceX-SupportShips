@@ -14,6 +14,7 @@
   /* border: black solid; */
   border-top: 0;
   border-bottom: 0;
+  outline: none;
 }
 
 .shipList li {

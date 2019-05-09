@@ -4,7 +4,7 @@ import logo from "../images/spaceXlogo.png";
 
 const spaceHeader = () => (
   <div className="headerWithLogo">
-    <img src={logo} />
+    <img src={logo} alt="SpaceX-logo" />
     <h1 className="spaceHeader">SpaceX Support Ships</h1>
   </div>
 );
