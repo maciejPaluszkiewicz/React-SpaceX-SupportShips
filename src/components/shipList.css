@@ -1,5 +1,5 @@
 .shipList {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   background-image: linear-gradient(
     to left,
     rgba(50, 50, 50, 0.5),
@@ -10,7 +10,7 @@
   width: 15%;
   list-style: none;
   margin: 0;
-  height: 88vh;
+  height: 100%;
   /* border: black solid; */
   border-top: 0;
   border-bottom: 0;
