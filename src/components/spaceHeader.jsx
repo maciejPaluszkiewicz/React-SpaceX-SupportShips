@@ -1,11 +1,11 @@
 import React from "react";
 import "./spaceHeader.css";
-import logo from "../images/SGC-logo.png";
+import logo from "../images/spaceXlogo.png";
 
 const spaceHeader = () => (
   <div className="headerWithLogo">
     <img src={logo} />
-    <h1 className="spaceHeader">Hello Space World!</h1>
+    <h1 className="spaceHeader">SpaceX Support Ships</h1>
   </div>
 );
 

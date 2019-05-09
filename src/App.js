@@ -4,14 +4,17 @@ import SpaceHeader from "./components/spaceHeader";
 import ShipList from "./components/shipList";
 import SingleShip from "./components/singleShip";
 
+const apiData = "https://api.spacexdata.com/v3/ships/";
+
 class App extends Component {
   state = {
     ships: null,
+    showShips: true,
     singleShip: null
   };
 
   handleShipDetailsDisplay = ship_id => {
-    fetch(`https://api.spacexdata.com/v3/ships/${ship_id}`)
+    fetch(`${apiData}${ship_id}`)
       .then(results => results.json())
       .then(data =>
         this.setState({
@@ -21,7 +24,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch("https://api.spacexdata.com/v3/ships")
+    fetch(`${apiData}`)
       .then(results => results.json())
       .then(data =>
         this.setState({
