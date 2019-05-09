@@ -40,6 +40,9 @@ class App extends Component {
         <div className="shipInfo">
           {this.state.ships ? (
             <ShipList
+              currentShipId={
+                this.state.singleShip ? this.state.singleShip.ship_id : null
+              }
               shipList={this.state.ships}
               onShipClick={this.handleShipDetailsDisplay}
             />
